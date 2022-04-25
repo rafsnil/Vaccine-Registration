@@ -6,16 +6,21 @@
 
 .main{
     background-image: url(../Images/image.jpg);
-    width: 100%;
+    width: auto;
     background-position: center;
-    background-size: cover;
-    height: 109vh;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 170vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .navbar{
     width: 100%;
     height: 44px;
-    background-color: rgba(117, 227, 212, 0.1);
+    background-color: rgba(251, 251, 251, 0.9);
 
     /*The Part below is used to keep the nav bar fixed and not shrink*/
     margin-right: auto;    
@@ -61,7 +66,7 @@ li {
   
 li a {
     display: flex;
-    color: rgb(164, 240, 225);
+    color: rgb(0, 58, 46);
     text-align: center;
     padding: 10px 25px;
     text-decoration: none;
@@ -75,6 +80,15 @@ li a {
     color: rgb(164, 240, 225);
     float: right;
     background: rgb(6, 103, 103);
+}
+
+.righty a{
+    display: flex;
+    color: rgb(164, 240, 225);
+    text-align: center;
+    padding: 0px 8px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
 }
 
 .righty:hover{
@@ -144,7 +158,7 @@ li a:hover {
 .btn{
     width: 240px;
     height: 40px;
-    background:  rgb(217, 217, 217);
+    background:  rgb(149, 219, 198);
     border: none;
     margin-top: 30px;
     font-size: 18px;
@@ -154,10 +168,72 @@ li a:hover {
     transition: 0.4s ease;
 }
 .btn:hover{
-    background: #26f5b7;
+    background: #01d293;
 }
 .btn a{
     text-decoration: none;
     color: rgb(0, 94, 59);
     font-weight: bold;
+}
+
+.container{
+    padding-top: 70px;
+}
+
+
+.f2{
+    background: linear-gradient(to bottom, rgba(0, 90, 88, 0.8),rgba(0,0,0,0.81));
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.f2{
+    padding-top: 30px;
+    margin-block-start: auto;
+    text-align: center;
+    align-items: center;
+}
+
+/* .f2 input{
+    display: block;
+    justify-content: center;
+    width: 350px;
+    height: 40px;
+    margin: 20px;
+} */
+
+.f2 input{
+    width: 420px;
+    height: 35px;
+    display: block;
+    background: transparent;
+    border-bottom: 2px solid #ffffff;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+::placeholder{
+    color: azure;
+}
+
+.f2 h2{
+    width: 400px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    background-color: rgb(10, 141, 127);
+    border-radius: 5px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.f2 input:focus{
+    outline: none;
 }
