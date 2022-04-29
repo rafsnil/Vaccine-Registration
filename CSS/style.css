@@ -114,7 +114,7 @@ li a:hover {
 
 .form{
     width: 250px;
-    height: 250px;
+    height: 350px;
     background: linear-gradient(to top, rgba(0, 90, 88, 0.8),rgba(0,0,0,0.81));
     position: absolute;
     transform: translate(0%,-5%);
@@ -236,4 +236,13 @@ li a:hover {
 
 .f2 input:focus{
     outline: none;
+}
+
+.error{
+    background: #04ffb4;
+    color: #bb1900;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
 }
