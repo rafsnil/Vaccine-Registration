@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-image: url(../Images/image.jpg);
+    width: auto;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 170vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.navbar{
+    width: 100%;
+    height: 44px;
+    background-color: rgba(244, 248, 246, 0.896);
+
+    /*The Part below is used to keep the nav bar fixed and not shrink*/
+    margin-right: auto;    
+    margin-left: auto;    
+    max-width: 100%;      
+    min-width: 1000px;
+    position: fixed;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: rgb(3, 75, 80);
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 0px;
+    padding-top: 2px;
+    float: left;
+
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+li {
+    float: left;
+    position: relative;
+  }
+  
+li a {
+    display: flex;
+    color: rgb( 0, 58, 46);
+    text-align: center;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+  }
+
+.righty{
+    font-family: 'Oswald', sans-serif;
+    /* text-align: right; */
+    padding: 10px 30px;
+    color: rgb(164,240,225);
+    float: right;
+    background: rgb(6,103,103);
+}
+.righty a{
+    display: flex;
+    color: rgb(164, 240, 225);
+    text-align: center;
+    padding: 0px 8px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.righty:hover{
+    background-color: rgb(3, 34, 107);
+
+}
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: rgb(3, 107, 104);
+  }
+  .userinfobox
+  {
+      margin: 70px;
+      border: 5px solid rgba(0, 0, 0, 0.638);
+      padding: 20px;
+      padding-top: 5px;
+      padding-right:auto;
+      color: rgb(234, 225, 225);
+      background: linear-gradient(to bottom, rgba(2, 131, 79, 0.86), rgba(53, 156, 135, 0.829));
+      align-self: center;
+
+  }
+  .wcbox
+  {
+      /*border: 2px solid black;*/
+      padding: 5px;
+      margin-bottom: 5px;
+  }
+  .wctxt 
+  {
+      /*border: 2px solid black;*/
+      padding: 10px;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      background-color: rgb(0, 82, 79);
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+  }
+  .infobox
+  {
+   /* border:2px solid rgb(0, 0, 0);*/
+    margin-bottom: 5px;
+  }
+  .ib
+  {
+      color: rgb(9, 11, 10);
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase ;
+    }
+  .ibbox
+  {
+     margin-top: 0px;
+     border: 3px solid rgb(0, 0, 0);
+     padding: 3px;
+      color: rgb(255, 255, 255);
+      font-family:Arial, Helvetica, sans-serif;
+      text-transform: initial;
+  }
+  .vacbox
+  {
+
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .vbtable
+  {
+      width: 1000px;
+  }
+  .vbhead
+  {
+      color: black;
+      text-align: left;
+      text-transform: uppercase;
+      font-weight:780;
+
+  }
+  .vbbody
+  {
+      color:rgb(255, 255, 255);
+      text-transform:uppercase;
+  }
+  .vbtable, .vbhead, .vbbody
+  {
+      border: 3px solid black;
+      border-collapse: collapse;
+  }
+  .vbhead, .vbbody
+  {
+      padding: 5px;
+  }

@@ -1,0 +1,4 @@
+- Create a database named "project".
+- Import this database in XAMP SQL.
+
+Have fun testing!

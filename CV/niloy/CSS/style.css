@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Oswald:wght@600&display=swap');
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Abel', sans-serif;
+}
+
+body
+{
+    background: rgb(191, 199, 203);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: rgb(156, 169, 185);
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /*to separate the two boxes in the body*/
+    box-shadow: 0px 30px 50px rgb(0, 0, 0); /*for the shading below*/
+}
+
+.container .left_side
+{
+    position: relative;
+    background: rgb(45, 46, 46);
+    padding: 40px;
+}
+
+.profiletext
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom:  1px solid white;
+}
+
+.profiletext .image1 /*to fit the container of the image perfectly*/
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow:hidden;
+}
+
+.image1 img  /*to fit the image perfectly*/
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */ /*to cover the radius perfectly with the picture*/
+}
+
+.profiletext h2
+{
+    color:  white;
+    font-size: small;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 0.5cm;
+}
+
+.profiletext h2 span
+{
+    font-size: smaller;
+    font-weight: 300;
+}
+
+.contactinfo
+{
+    padding: 10px; /*to make a invisible box around something. Manipulate this to adjust texts/images inside*/
+    padding-bottom: 40px;
+}
+
+.title{
+    color: aliceblue;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+
+.contactinfo ul
+{
+    position: relative;
+}
+
+.contactinfo ul li
+{
+    position:relative;
+    list-style: none;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.contactinfo ul li .icon
+{
+    display: inline-block; 
+    width: 30px;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.contactinfo ul li span
+{
+    color: aliceblue;
+    font-weight: 300;
+    font-size: 0.7 em;
+}
+
+.education ul
+{
+    list-style: none;
+}
+
+.education ul li
+{
+    margin-bottom: 20px;
+}
+
+.education h5
+{
+    color: rgb(167, 238, 238);
+    font-weight: 500;
+}
+
+.education h4 
+{
+    color: aliceblue;
+    font-weight: 500;
+}
+
+.language ul
+{
+    list-style: none;
+}
+
+.language ul li span
+{
+    color: aliceblue;
+    font-weight: 300;
+    font-size: 0.7 em;
+    color: rgb(167, 238, 238);
+}
+
+.language .percentile
+{
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background:rgb(97, 104, 113);
+    display: block;
+    margin-top: 10px;
+}
+
+.language .percentile div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: white;
+}
+
+.container.right_side
+{
+    position: relative;
+    background: darkblue;
+    padding: 40px;
+}
+
+.title2{
+    color: rgb(47, 55, 61);
+    text-transform: uppercase;
+    font:bolder;
+    font-size: large;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding-left:15px;
+    padding-top: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.about
+{
+    padding-left: 30px;
+    margin-bottom: 20px;
+    padding-right: 30px;
+}
+
+.about:last-child
+{
+    margin-bottom: 0;
+}
+
+p
+{
+    color: black;
+}
+
+.about .box
+{
+    display: flex;  /*Flex box is used to arrange is a very sophisticated way*/
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .yearcompany
+{
+    min-width: 150px;
+}
+
+.about .box .yearcompany h5
+{
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.about .box .text h4
+{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: large;
+    color: rgb(6, 6, 74);
+}
+
+.skills .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 1fr; /*same as the 150 value here ".about .box .yearcompany"*/
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4
+{
+    text-transform: uppercase;
+    color: rgb(3, 53, 53);
+    font-weight: 1000;
+}
+
+.skills .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: rgb(97, 104, 113);
+}
+
+.skills .box .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: white;
+}
+
+.interests ul
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.interests ul li
+{
+    list-style: none;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.interests ul li .fa 
+{
+   color: rgb(236, 241, 245);
+   font-size: 18px;
+   width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

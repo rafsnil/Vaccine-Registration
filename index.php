@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COVAC Login</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/niloy.css" />
 </head>
 
 <body>
@@ -16,11 +16,11 @@
                 <h2 class="logo">COVAC</h2>
             </div>
             <div class="menu">
-                <ul>
-                    <li><a href="index.php">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li>
+                <ul class="navi">
+                    <li class="navilist"><a href="index.php">HOME</a></li>
+                    <li class="navilist"><a href="about.php">ABOUT</a></li>
+                    <li class="navilist"><a href="contact.php">CONTACT</a></li>
+                    <li class="navilist">
                         <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">SURPRISE!</a>
                     </li>
                 </ul>

@@ -27,8 +27,8 @@
       }
     } else if ($username == "admin" && $password == "admin420") {
 
-      $_SESSION['username'] = $username;
-      $_SESSION['password'] = $password;
+      $_SESSION['UserID'] = $username;
+      $_SESSION['userPassword'] = $password;
 
       header("Location: admin.php");
       exit();
